@@ -273,9 +273,9 @@ function updateCrimeTypes() {
   //Make the socrata request object
   var socrataRequest = {
     url: socrataURL,
-    dataset: crimeDataset,
-    select: "description",
-    group: "description"
+    dataset: youthEduDataset//,
+    //select: "description",
+    //group: "description"
   };
 
   //Send the socrata request, and make a new list of options
@@ -387,9 +387,9 @@ function plotCrimes() {
   //Construct our request object
   var socrataRequest = {
     url: socrataURL,
-    dataset: crimeDataset,
-    select: "crimedate,crimecode,location,description,weapon,district,neighborhood,location_1",
-    where: whereStatement,
+    dataset: youthEduDataset,
+    select: "years_available, indicator, variable_name, full_source, section",
+    //where: whereStatement,
     limit: 50000
   };
 
@@ -447,4 +447,4 @@ var censusKey = "486a5ea7276908d925ac2818d01530411f902225";
 var socrataURL = "data.baltimorecity.gov";
 
 //Socrata datasets
-var crimeDataset = "4ih5-d5d5";
+var youthEduDataset = "uuev-6p46";

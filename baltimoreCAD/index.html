@@ -31,17 +31,17 @@
 </head>
 
 <body>
-    <div style="background: url(skyline.jpg) no-repeat center center; margin-bottom: 2em; color: white; height: 300px; background-size: cover; background-position: -100px, -100px;
+    <div style="background: url(logoupdate.PNG) no-repeat center center; margin-bottom: 2em; color: white; height: 300px; background-size: cover; background-position: -100px, -100px;
                 background-color:black; position:relative;">
         <div class="container">
-            <h3>Baltimore Education and Demographics</h3>
+           <!-- <h3>Baltimore Education and Demographics</h3>
             <p>Visualize Baltimore Crime data versus various demographics. Change the date range, crime types, and arrest options for Crime.</p>
             <p>Select your boundary types and variables to compare.
-            Click a crime marker to view more data about that crime, or click inside a boundary to view the requested variables for that boundary.</p>
+            Click a crime marker to view more data about that crime, or click inside a boundary to view the requested variables for that boundary.</p> 
         </div>
         <div style="color:white; font-size: 75%; position:absolute; bottom:0; right:0; padding: 0.5em; text-align:right;">
             Powered by<br/>
-            <a href="http://uscensusbureau.github.io/citysdk/index.html" target="_blank"><img height="50px" src="./citysdk_horizontal_logo.png"/></a>
+            <a href="http://uscensusbureau.github.io/citysdk/index.html" target="_blank"><img height="50px" src="./citysdk_horizontal_logo.png"/></a> -->
         </div>
     </div>
     <div class="container">
@@ -83,7 +83,7 @@
         </div>
         <div class="col-md-6">
             <div class="row">
-                <h3>Crime Controls</h3>
+                <h3>Suspension Rates</h3>
             </div>
             <div class="row row-spacer">
                 <div class="col-md-3">
@@ -107,7 +107,7 @@
             </div>
             <div class="row row-spacer">
                 <div class="col-md-3">
-                    Crime type:
+                    Education type:
                 </div>
                 <div class="col-md-9">
                     <select id="primary_type" style="width: 100%;">
@@ -117,10 +117,10 @@
             </div>
             <div class="row row-spacer">
                 <div class="col-md-6">
-                    <p><a class="btn btn-primary btn-lg" style="width: 100%;" href="javascript:void(0)" onclick="plotCrimes()" role="button">Plot Crimes</a></p>
+                    <p><a class="btn btn-primary btn-lg" style="width: 100%;" href="javascript:void(0)" onclick="plotCrimes()" role="button">Plot Stats</a></p>
                 </div>
                 <div class="col-md-6">
-                    <p><a class="btn btn-primary btn-lg" style="width: 100%;" href="javascript:void(0)" onclick="clearCrimes()" role="button">Clear Crimes</a></p>
+                    <p><a class="btn btn-primary btn-lg" style="width: 100%;" href="javascript:void(0)" onclick="clearCrimes()" role="button">Clear Stats</a></p>
                 </div>
             </div>
             <div class="row row-spacer">
@@ -168,17 +168,19 @@
                         </div>
                         <div class="row row-spacer">
                             <div class="col-md-4">
+						<!--
                                 <input type="checkbox" label="Median Contract Rent" value="median_contract_rent"/> Median Contract Rent <a class="questionLink" href="javascript:void(0)"  data-toggle="tooltip" title=""><sup>?</sup></a>
                             </div>
                             <div class="col-md-4">
                                 <input type="checkbox" label="Median Gross Rent" value="median_gross_rent"/> Median Gross Rent <a class="questionLink" href="javascript:void(0)"  data-toggle="tooltip" title=""><sup>?</sup></a>
                             </div>
                             <div class="col-md-4">
-                                <input type="checkbox" label="Median House Construction Year" value="median_house_construction_year"/> Median House Construction Year <a class="questionLink" href="javascript:void(0)"  data-toggle="tooltip" title=""><sup>?</sup></a>
-                            </div>
+                                <input type="checkbox" label="Median House Construction Year" value="median_house_construction_year"/> Median House Construction Year <a class="questionLink" href="javascript:void(0)"  data-toggle="tooltip" title=""><sup>?</sup></a> -->
+                            </div> 
 
                         </div>
                         <div class="row row-spacer">
+
                             <div class="col-md-4">
                                 <input type="checkbox" label="Population, High School Diploma" value="education_high_school"/> Population, High School Diploma <a class="questionLink" href="javascript:void(0)"  data-toggle="tooltip" title=""><sup>?</sup></a>
                             </div>
@@ -202,8 +204,10 @@
                         </div>
                         <div class="row row-spacer">
                             <div class="col-md-4">
+                               <!-- <input type="checkbox" label="Population, No Education" value="B15001_001E"/> Population, No Education <a class="questionLink" href="javascript:void(0)"  data-toggle="tooltip" title=""><sup>?</sup></a> -->
                                 <input type="checkbox" label="Population, No Education" value="education_none"/> Population, No Education <a class="questionLink" href="javascript:void(0)"  data-toggle="tooltip" title=""><sup>?</sup></a>
-                            </div>
+                            
+							</div>
                             <div class="col-md-4">
                                 <input type="checkbox" label="Population, GED" value="education_ged"/> Population, GED <a class="questionLink" href="javascript:void(0)"  data-toggle="tooltip" title=""><sup>?</sup></a>
                             </div>
