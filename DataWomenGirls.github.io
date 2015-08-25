@@ -15,7 +15,7 @@ nav: contribute
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>CitySDK</title>
+    <title>"WH Council Women and Girls" </title>
 
 
 
